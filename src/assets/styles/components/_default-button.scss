@@ -1,0 +1,50 @@
+.default-button {
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 16px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #262626;
+    color: #4D4D4D;
+    cursor: initial;
+
+    &:hover {
+      background-color: #262626;
+      color: #4D4D4D;
+      transform: translateY(0);
+    }
+  }
+
+  &__light {
+    background-color: #262626;
+  }
+
+  &__small {
+    width: 160px;
+    font-size: 16px;
+    border: none;
+    background-color: #262626;
+  }
+
+  &:hover {
+    background-color: #262626;
+    transform: translateY(-5px);
+  }
+
+  &__success {
+    background-color: #449B37;
+    color: white;
+
+    &:hover {
+      background-color: #459B36;;
+      color: white;
+    }
+  }
+}

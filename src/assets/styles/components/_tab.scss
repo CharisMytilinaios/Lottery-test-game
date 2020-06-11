@@ -1,0 +1,42 @@
+.tab {
+  color: white;
+  padding: 18px;
+  display: flex;
+  background-color: black;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+
+  &__selected {
+    background-color: #262626;
+  }
+
+  &:hover {
+    background-color: #262626;
+  }
+
+  &:first-of-type {
+    border-top-left-radius: 10px;
+  }
+
+  &__status {
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px;
+    height: 5px;
+    width: 5px;
+
+    &--error {
+      border: none;
+      background-color: red;
+    }
+
+    &--success {
+      border: none;
+      background-color: green;
+    }
+  }
+}

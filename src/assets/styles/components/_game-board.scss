@@ -1,0 +1,53 @@
+.game-board {
+  padding: 20px;
+  width: 850px;
+  display: flex;
+  background-color: #262626;
+  flex-direction: column;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+
+  &__game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 96px 0;
+  }
+
+  &__lotto-number {
+    background-color: #4D4D4D;
+    color: white;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+      background-color: darkorange;
+    }
+
+    &--selected {
+      background-color: #EB4F08;
+
+      &:hover {
+        background-color: #EB4F08;
+      }
+    }
+  }
+
+  &__empty-element {
+    width: 50px;
+    margin: 0 5px;
+    height: 0;
+  }
+}

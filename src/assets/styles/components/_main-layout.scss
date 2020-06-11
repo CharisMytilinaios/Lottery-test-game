@@ -1,0 +1,21 @@
+.main {
+  transition: all .5s ease;
+  position: relative;
+
+  &__heading {
+    font-size: 18px;
+    color: white;
+  }
+
+  &__game-tabs-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__game-tabs-container {
+    display: flex;
+    align-items: center;
+  }
+}
